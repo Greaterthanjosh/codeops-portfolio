@@ -1,5 +1,5 @@
 # codeops-portfolio
 
-This repository contains my CodeOps learning exercises and daily notes.
+This repository contains my codeops learning exercises and daily notes.
 
 Name: Eyasu Yebeltal
