@@ -1,0 +1,217 @@
+:root {
+  --brand: hsl(212, 68%, 33%);
+  --brand-hover: hsl(212, 68%, 45%);
+
+  --text: hsl(222, 47%, 11%);
+  --muted: hsl(215, 16%, 47%);
+  --background: hsl(210, 40%, 96%);
+  --surface: hsl(0, 0%, 100%);
+  --border: hsl(214, 32%, 91%);
+
+  --space-xs: 8px;
+  --space-sm: 12px;
+  --space: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+  --space-2xl: 40px;
+
+  --radius: 12px;
+  --shadow: 0 8px 24px hsla(222, 47%, 11%, 0.1);
+}
+
+/* Global box-sizing */
+
+* {
+  box-sizing: border-box;
+}
+
+/* Page */
+
+body {
+  margin: 0;
+  background: var(--background);
+  color: var(--text);
+
+  font-family: "Inter", sans-serif;
+  line-height: 1.6;
+}
+
+/* Main container */
+
+main {
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: var(--space-xl);
+}
+
+/* Business card */
+
+.card {
+  width: 100%;
+  max-width: 420px;
+
+  margin: var(--space-2xl) auto;
+
+  background: var(--surface);
+
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+
+  overflow: hidden;
+
+  box-shadow: var(--shadow);
+}
+
+/* Image */
+
+.card-image img {
+  display: block;
+
+  width: 100%;
+  height: 220px;
+
+  object-fit: cover;
+}
+
+/* Card content */
+
+.card-content {
+  padding: var(--space-xl);
+}
+
+/* Business category */
+
+.business-type {
+  margin: 0 0 var(--space-sm);
+
+  color: var(--brand);
+
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+/* Business name */
+
+h1 {
+  position: relative;
+
+  margin: 0 0 var(--space-sm);
+
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+/* Pseudo-element */
+
+h1::before {
+  content: "";
+
+  display: block;
+
+  width: 45px;
+  height: 4px;
+
+  margin-bottom: var(--space);
+
+  background: var(--brand);
+
+  border-radius: 999px;
+}
+
+/* Tagline */
+
+.tagline {
+  margin: 0 0 var(--space-lg);
+
+  color: var(--brand);
+
+  font-size: 1.1rem;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+/* Description */
+
+.description {
+  margin: 0 0 var(--space-lg);
+
+  color: var(--muted);
+
+  line-height: 1.8;
+}
+
+/* Business information */
+
+.business-details {
+  margin-bottom: var(--space-xl);
+
+  padding-top: var(--space);
+
+  border-top: 1px solid var(--border);
+}
+
+.business-details p {
+  margin: var(--space-sm) 0;
+
+  color: var(--muted);
+}
+
+.business-details strong {
+  color: var(--text);
+}
+
+/* Contact button */
+
+.btn {
+  display: inline-block;
+
+  padding: var(--space-sm) var(--space-lg);
+
+  background: var(--brand);
+  color: var(--surface);
+
+  border-radius: var(--radius);
+
+  font-weight: 600;
+  text-decoration: none;
+
+  transition: background-color 0.2s ease;
+}
+
+/* Hover changes only lightness */
+
+.btn:hover {
+  background: var(--brand-hover);
+}
+
+/* Keyboard focus */
+
+.btn:focus-visible {
+  outline: 3px solid var(--brand);
+  outline-offset: 3px;
+}
+
+/* Smaller screens */
+
+@media (max-width: 480px) {
+  main {
+    padding: var(--space);
+  }
+
+  .card {
+    margin: var(--space) auto;
+  }
+
+  .card-content {
+    padding: var(--space-lg);
+  }
+
+  h1 {
+    font-size: 1.7rem;
+  }
+}
