@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Habesha Eatery — Ethiopian Restaurant in Bole</title>
+
+    <meta
+      name="description"
+      content="Habesha Eatery is a fictional Ethiopian restaurant in Bole, Addis Ababa, serving traditional dishes, coffee, and warm hospitality."
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <!-- =========================
+         NAVIGATION
+    ========================== -->
+
+    <header class="site-header">
+      <nav class="navbar" aria-label="Main navigation">
+        <a class="logo" href="#home"> Habesha Eatery </a>
+
+        <div class="nav-links">
+          <a href="#home">Home</a>
+          <a href="#about">Our Story</a>
+          <a href="#menu">Menu</a>
+          <a href="#reservation">Reservations</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- =========================
+             HERO
+        ========================== -->
+
+      <section class="hero" id="home">
+        <div class="hero-content">
+          <p class="eyebrow">AUTHENTIC ETHIOPIAN CUISINE</p>
+
+          <h1>
+            Taste Ethiopia,<br />
+            One Bite at a Time.
+          </h1>
+
+          <p class="hero-text">
+            Traditional Ethiopian flavors, freshly prepared and served with the
+            warmth of Habesha hospitality in the heart of Bole.
+          </p>
+
+          <a class="button" href="#reservation"> Reserve a Table </a>
+        </div>
+      </section>
+
+      <!-- =========================
+             ABOUT
+        ========================== -->
+
+      <section class="about section" id="about">
+        <div class="section-container about-grid">
+          <div class="about-image">
+            <img
+              src="images/hero.jpeg"
+              alt="Traditional Ethiopian food served on injera"
+            />
+          </div>
+
+          <div class="about-content">
+            <p class="eyebrow">OUR STORY</p>
+
+            <h2>A Taste of Home in Bole</h2>
+
+            <p>
+              Habesha Eatery was created to celebrate the rich culinary
+              traditions of Ethiopia. From our freshly prepared injera to our
+              carefully seasoned wot and tibs, every dish is inspired by the
+              flavors shared around Ethiopian family tables.
+            </p>
+
+            <p>
+              Whether you are enjoying a meal with family, meeting friends, or
+              experiencing Ethiopian cuisine for the first time, our goal is to
+              make every visit feel like coming home.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================
+             MENU
+        ========================== -->
+
+      <section class="menu section" id="menu">
+        <div class="section-container">
+          <div class="section-heading">
+            <p class="eyebrow">FROM OUR KITCHEN</p>
+
+            <h2>Our Menu</h2>
+
+            <p>
+              Traditional Ethiopian favorites prepared with fresh ingredients
+              and authentic spices.
+            </p>
+          </div>
+
+          <div class="menu-grid">
+            <!-- MENU CARD 1 -->
+
+            <article class="menu-card">
+              <img
+                src="images/doro-wot.jpeg"
+                alt="Doro wot Ethiopian chicken stew served with injera"
+              />
+
+              <div class="menu-card-content">
+                <div class="menu-title">
+                  <h3>Doro Wot</h3>
+
+                  <span> ETB 450 </span>
+                </div>
+
+                <p>
+                  Spicy Ethiopian chicken stew cooked with berbere, onions, and
+                  traditional spices.
+                </p>
+              </div>
+            </article>
+
+            <!-- MENU CARD 2 -->
+
+            <article class="menu-card">
+              <img
+                src="images/kitfo.jpeg"
+                alt="Traditional Ethiopian kitfo dish"
+              />
+
+              <div class="menu-card-content">
+                <div class="menu-title">
+                  <h3>Kitfo</h3>
+
+                  <span> ETB 500 </span>
+                </div>
+
+                <p>
+                  Seasoned minced beef prepared with Ethiopian spices and served
+                  with traditional accompaniments.
+                </p>
+              </div>
+            </article>
+
+            <!-- MENU CARD 3 -->
+
+            <article class="menu-card">
+              <img
+                src="images/tibs.jpeg"
+                alt="Ethiopian beef tibs with vegetables"
+              />
+
+              <div class="menu-card-content">
+                <div class="menu-title">
+                  <h3>Beef Tibs</h3>
+
+                  <span> ETB 475 </span>
+                </div>
+
+                <p>
+                  Tender pieces of beef sautéed with onions, peppers, rosemary,
+                  and Ethiopian spices.
+                </p>
+              </div>
+            </article>
+
+            <!-- MENU CARD 4 -->
+
+            <article class="menu-card">
+              <img
+                src="images/vegetarian.jpeg"
+                alt="Ethiopian vegetarian platter with injera"
+              />
+
+              <div class="menu-card-content">
+                <div class="menu-title">
+                  <h3>Beyaynetu</h3>
+
+                  <span> ETB 350 </span>
+                </div>
+
+                <p>
+                  A colorful combination of traditional vegetarian Ethiopian
+                  dishes served with fresh injera.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================
+             RESERVATION
+        ========================== -->
+
+      <section class="reservation section" id="reservation">
+        <div class="section-container reservation-container">
+          <div class="section-heading">
+            <p class="eyebrow">JOIN US</p>
+
+            <h2>Reserve Your Table</h2>
+
+            <p>
+              Planning a special meal? Reserve your table and let us prepare a
+              place for you.
+            </p>
+          </div>
+
+          <form class="reservation-form" action="#" method="post">
+            <div class="form-group">
+              <label for="name"> Full Name </label>
+
+              <input
+                type="text"
+                id="name"
+                name="name"
+                required
+                autocomplete="name"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="email"> Email Address </label>
+
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                autocomplete="email"
+              />
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="date"> Reservation Date </label>
+
+                <input type="date" id="date" name="date" required />
+              </div>
+
+              <div class="form-group">
+                <label for="time"> Reservation Time </label>
+
+                <input type="time" id="time" name="time" required />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="guests"> Number of Guests </label>
+
+              <input
+                type="number"
+                id="guests"
+                name="guests"
+                min="1"
+                max="20"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="requests"> Special Requests </label>
+
+              <textarea
+                id="requests"
+                name="requests"
+                rows="5"
+                placeholder="Let us know about any special requests."
+              ></textarea>
+            </div>
+
+            <button class="button" type="submit">Reserve My Table</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer class="footer" id="contact">
+      <div class="section-container footer-grid">
+        <div>
+          <h2>Habesha Eatery</h2>
+
+          <p>
+            Authentic Ethiopian food and warm hospitality in the heart of Bole.
+          </p>
+        </div>
+
+        <div>
+          <h3>Visit Us</h3>
+
+          <address>
+            Bole Road<br />
+            Addis Ababa, Ethiopia
+          </address>
+        </div>
+
+        <div>
+          <h3>Contact</h3>
+
+          <p>
+            <a href="tel:+251911000000"> +251 911 000 000 </a>
+          </p>
+
+          <p>
+            <a href="mailto:hello@habeshaeatery.example">
+              hello@habeshaeatery.example
+            </a>
+          </p>
+        </div>
+
+        <div>
+          <h3>Opening Hours</h3>
+
+          <p>
+            Monday – Sunday<br />
+            10:00 AM – 10:00 PM
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Habesha Eatery. Fictional CodeOps project.</p>
+      </div>
+    </footer>
+  </body>
+</html>
