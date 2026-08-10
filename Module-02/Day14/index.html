@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Abyssinia Air — Flight Results</title>
+
+    <meta
+      name="description"
+      content="A fictional Ethiopian airline flight results dashboard demonstrating CSS Grid and Flexbox."
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="app">
+      <!-- HEADER -->
+      <header class="header">
+        <nav class="navbar">
+          <a class="logo" href="#"> Abyssinia Air </a>
+
+          <div class="nav-links">
+            <a href="#">Flights</a>
+            <a href="#">Bookings</a>
+            <a href="#">Check-in</a>
+            <a href="#">Manage Trip</a>
+          </div>
+
+          <button class="profile-button">JD</button>
+        </nav>
+      </header>
+
+      <!-- SIDEBAR -->
+      <aside class="sidebar">
+        <h2>Filter Flights</h2>
+
+        <section class="filter-section">
+          <h3>Departure</h3>
+
+          <label>
+            <input type="checkbox" />
+            Morning
+          </label>
+
+          <label>
+            <input type="checkbox" />
+            Afternoon
+          </label>
+
+          <label>
+            <input type="checkbox" />
+            Evening
+          </label>
+        </section>
+
+        <section class="filter-section">
+          <h3>Stops</h3>
+
+          <label>
+            <input type="checkbox" />
+            Non-stop
+          </label>
+
+          <label>
+            <input type="checkbox" />
+            1 Stop
+          </label>
+        </section>
+
+        <section class="filter-section">
+          <h3>Airports</h3>
+
+          <label>
+            <input type="checkbox" />
+            Addis Ababa
+          </label>
+
+          <label>
+            <input type="checkbox" />
+            Nairobi
+          </label>
+        </section>
+      </aside>
+
+      <!-- MAIN CONTENT -->
+      <main class="main">
+        <section class="page-heading">
+          <div>
+            <p class="eyebrow">FLIGHT SEARCH</p>
+
+            <h1>Addis Ababa → Nairobi</h1>
+
+            <p class="date">Friday, August 21, 2026 · 1 Passenger</p>
+          </div>
+
+          <button class="modify-button">Modify Search</button>
+        </section>
+
+        <!-- TOOLBAR -->
+        <section class="toolbar">
+          <div class="toolbar-left">
+            <strong>8 flights found</strong>
+
+            <span>Economy</span>
+          </div>
+
+          <div class="toolbar-right">
+            <label for="sort">Sort by:</label>
+
+            <select id="sort">
+              <option>Recommended</option>
+              <option>Lowest Price</option>
+              <option>Shortest Duration</option>
+            </select>
+          </div>
+        </section>
+
+        <!-- RESPONSIVE CARD GRID -->
+        <section class="cards" aria-label="Available flights">
+          <!-- CARD 1 -->
+          <article class="flight-card">
+            <div class="badge">Best Value</div>
+
+            <div class="airline-row">
+              <div class="airline">
+                <strong>ABY</strong>
+                <span>Abyssinia Air</span>
+              </div>
+
+              <span class="flight-number"> AB 204 </span>
+            </div>
+
+            <div class="flight-times">
+              <div>
+                <strong>08:30</strong>
+                <span>ADD</span>
+              </div>
+
+              <div class="duration">
+                <span>2h 05m</span>
+                <div class="line"></div>
+                <span>Non-stop</span>
+              </div>
+
+              <div>
+                <strong>10:35</strong>
+                <span>NBO</span>
+              </div>
+            </div>
+
+            <div class="card-footer">
+              <div>
+                <span>From</span>
+                <strong>ETB 12,500</strong>
+              </div>
+
+              <button class="select-button">Select</button>
+            </div>
+          </article>
+
+          <!-- CARD 2 -->
+          <article class="flight-card">
+            <div class="airline-row">
+              <div class="airline">
+                <strong>ABY</strong>
+                <span>Abyssinia Air</span>
+              </div>
+
+              <span class="flight-number"> AB 218 </span>
+            </div>
+
+            <div class="flight-times">
+              <div>
+                <strong>11:15</strong>
+                <span>ADD</span>
+              </div>
+
+              <div class="duration">
+                <span>2h 10m</span>
+                <div class="line"></div>
+                <span>Non-stop</span>
+              </div>
+
+              <div>
+                <strong>13:25</strong>
+                <span>NBO</span>
+              </div>
+            </div>
+
+            <div class="card-footer">
+              <div>
+                <span>From</span>
+                <strong>ETB 13,200</strong>
+              </div>
+
+              <button class="select-button">Select</button>
+            </div>
+          </article>
+
+          <!-- CARD 3 -->
+          <article class="flight-card">
+            <div class="airline-row">
+              <div class="airline">
+                <strong>ABY</strong>
+                <span>Abyssinia Air</span>
+              </div>
+
+              <span class="flight-number"> AB 230 </span>
+            </div>
+
+            <div class="flight-times">
+              <div>
+                <strong>14:45</strong>
+                <span>ADD</span>
+              </div>
+
+              <div class="duration">
+                <span>2h 00m</span>
+                <div class="line"></div>
+                <span>Non-stop</span>
+              </div>
+
+              <div>
+                <strong>16:45</strong>
+                <span>NBO</span>
+              </div>
+            </div>
+
+            <div class="card-footer">
+              <div>
+                <span>From</span>
+                <strong>ETB 14,000</strong>
+              </div>
+
+              <button class="select-button">Select</button>
+            </div>
+          </article>
+
+          <!-- CARD 4 -->
+          <article class="flight-card">
+            <div class="airline-row">
+              <div class="airline">
+                <strong>ABY</strong>
+                <span>Abyssinia Air</span>
+              </div>
+
+              <span class="flight-number"> AB 246 </span>
+            </div>
+
+            <div class="flight-times">
+              <div>
+                <strong>18:20</strong>
+                <span>ADD</span>
+              </div>
+
+              <div class="duration">
+                <span>2h 15m</span>
+                <div class="line"></div>
+                <span>Non-stop</span>
+              </div>
+
+              <div>
+                <strong>20:35</strong>
+                <span>NBO</span>
+              </div>
+            </div>
+
+            <div class="card-footer">
+              <div>
+                <span>From</span>
+                <strong>ETB 12,900</strong>
+              </div>
+
+              <button class="select-button">Select</button>
+            </div>
+          </article>
+
+          <!-- CARD 5 -->
+          <article class="flight-card">
+            <div class="airline-row">
+              <div class="airline">
+                <strong>ABY</strong>
+                <span>Abyssinia Air</span>
+              </div>
+
+              <span class="flight-number"> AB 252 </span>
+            </div>
+
+            <div class="flight-times">
+              <div>
+                <strong>20:10</strong>
+                <span>ADD</span>
+              </div>
+
+              <div class="duration">
+                <span>2h 05m</span>
+                <div class="line"></div>
+                <span>Non-stop</span>
+              </div>
+
+              <div>
+                <strong>22:15</strong>
+                <span>NBO</span>
+              </div>
+            </div>
+
+            <div class="card-footer">
+              <div>
+                <span>From</span>
+                <strong>ETB 13,700</strong>
+              </div>
+
+              <button class="select-button">Select</button>
+            </div>
+          </article>
+        </section>
+      </main>
+
+      <!-- FOOTER -->
+      <footer class="footer">
+        <p>© 2026 Abyssinia Air · Fictional CodeOps Day 14 project</p>
+      </footer>
+    </div>
+  </body>
+</html>

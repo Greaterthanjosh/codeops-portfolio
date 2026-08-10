@@ -1,0 +1,555 @@
+/* =========================
+   GLOBAL
+========================= */
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --brand: hsl(134, 91%, 39%);
+  --brand-light: hsl(64, 85%, 73%);
+
+  --text: hsl(222, 47%, 11%);
+  --muted: hsl(215, 16%, 47%);
+
+  --background: hsl(210, 40%, 96%);
+  --surface: hsl(0, 0%, 100%);
+  --border: hsl(214, 32%, 91%);
+
+  --success: hsl(150, 60%, 35%);
+
+  --space-xs: 8px;
+  --space-sm: 12px;
+  --space: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+
+  --radius: 10px;
+}
+
+/* =========================
+   BODY
+========================= */
+
+body {
+  margin: 0;
+
+  background: var(--background);
+  color: var(--text);
+
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* =========================
+   GRID PAGE SKELETON
+========================= */
+
+.app {
+  min-height: 100vh;
+
+  display: grid;
+
+  grid-template-columns: 240px 1fr;
+
+  grid-template-rows: auto 1fr auto;
+
+  grid-template-areas:
+    "header header"
+    "sidebar main"
+    "footer footer";
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+  grid-area: header;
+
+  position: sticky;
+  top: 0;
+
+  z-index: 100;
+
+  background: var(--surface);
+
+  border-bottom: 1px solid var(--border);
+}
+
+/* =========================
+   NAVBAR - FLEXBOX
+========================= */
+
+.navbar {
+  min-height: 70px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  gap: var(--space);
+
+  padding: 0 var(--space-xl);
+}
+
+.logo {
+  color: var(--brand);
+
+  font-size: 1.3rem;
+  font-weight: 700;
+
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+
+  align-items: center;
+
+  gap: var(--space-lg);
+}
+
+.nav-links a {
+  color: var(--text);
+
+  text-decoration: none;
+
+  font-size: 0.95rem;
+}
+
+.nav-links a:hover {
+  color: var(--brand);
+}
+
+.profile-button {
+  width: 40px;
+  height: 40px;
+
+  border: 0;
+  border-radius: 50%;
+
+  background: var(--brand);
+  color: white;
+
+  font-weight: 700;
+
+  cursor: pointer;
+}
+
+/* =========================
+   SIDEBAR
+========================= */
+
+.sidebar {
+  grid-area: sidebar;
+
+  padding: var(--space-xl);
+
+  background: var(--surface);
+
+  border-right: 1px solid var(--border);
+
+  position: sticky;
+  top: 70px;
+
+  height: calc(100vh - 70px);
+
+  overflow-y: auto;
+}
+
+.sidebar h2 {
+  margin-top: 0;
+
+  font-size: 1.2rem;
+}
+
+.filter-section {
+  padding: var(--space) 0;
+
+  border-bottom: 1px solid var(--border);
+}
+
+.filter-section h3 {
+  margin-top: 0;
+
+  font-size: 0.95rem;
+}
+
+.filter-section label {
+  display: block;
+
+  margin: var(--space-sm) 0;
+
+  color: var(--muted);
+
+  cursor: pointer;
+}
+
+.filter-section input {
+  margin-right: var(--space-xs);
+}
+
+/* =========================
+   MAIN
+========================= */
+
+.main {
+  grid-area: main;
+
+  padding: var(--space-xl);
+
+  min-width: 0;
+}
+
+/* =========================
+   PAGE HEADING - FLEXBOX
+========================= */
+
+.page-heading {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  gap: var(--space);
+
+  margin-bottom: var(--space-xl);
+}
+
+.eyebrow {
+  margin: 0;
+
+  color: var(--brand);
+
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+}
+
+.page-heading h1 {
+  margin: var(--space-xs) 0;
+
+  font-size: 1.8rem;
+}
+
+.date {
+  margin: 0;
+
+  color: var(--muted);
+}
+
+.modify-button {
+  padding: var(--space-sm) var(--space);
+
+  background: var(--surface);
+
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+
+  color: var(--text);
+
+  cursor: pointer;
+}
+
+/* =========================
+   TOOLBAR - FLEXBOX
+========================= */
+
+.toolbar {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  gap: var(--space);
+
+  margin-bottom: var(--space);
+
+  padding: var(--space);
+
+  background: var(--surface);
+
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+
+.toolbar-left,
+.toolbar-right {
+  display: flex;
+
+  align-items: center;
+
+  gap: var(--space);
+}
+
+.toolbar-left span {
+  color: var(--muted);
+}
+
+.toolbar-right select {
+  padding: var(--space-xs) var(--space-sm);
+
+  border: 1px solid var(--border);
+  border-radius: 6px;
+
+  background: var(--surface);
+}
+
+/* =========================
+   RESPONSIVE CARD GRID
+========================= */
+
+.cards {
+  display: grid;
+
+  gap: var(--space);
+
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+/* =========================
+   FLIGHT CARD
+========================= */
+
+.flight-card {
+  position: relative;
+
+  padding: var(--space-lg);
+
+  background: var(--surface);
+
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+
+  box-shadow: 0 2px 8px hsla(222, 47%, 11%, 0.05);
+}
+
+/* =========================
+   ABSOLUTELY POSITIONED BADGE
+========================= */
+
+.badge {
+  position: absolute;
+
+  top: 12px;
+  right: 12px;
+
+  padding: 4px 8px;
+
+  background: var(--brand-light);
+  color: var(--brand);
+
+  border-radius: 20px;
+
+  font-size: 0.7rem;
+  font-weight: 700;
+}
+
+/* =========================
+   AIRLINE ROW - FLEXBOX
+========================= */
+
+.airline-row {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  gap: var(--space);
+
+  margin-bottom: var(--space-xl);
+}
+
+.airline {
+  display: flex;
+
+  flex-direction: column;
+}
+
+.airline strong {
+  font-size: 1.1rem;
+}
+
+.airline span,
+.flight-number {
+  color: var(--muted);
+
+  font-size: 0.8rem;
+}
+
+/* =========================
+   FLIGHT TIMES - FLEXBOX
+========================= */
+
+.flight-times {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  gap: var(--space);
+
+  margin-bottom: var(--space-xl);
+
+  text-align: center;
+}
+
+.flight-times > div {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 2px;
+}
+
+.flight-times strong {
+  font-size: 1.4rem;
+}
+
+.flight-times span {
+  color: var(--muted);
+
+  font-size: 0.8rem;
+}
+
+.duration {
+  flex: 1;
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+
+  margin: 4px 0;
+
+  background: var(--border);
+}
+
+/* =========================
+   CARD FOOTER - FLEXBOX
+========================= */
+
+.card-footer {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  padding-top: var(--space);
+
+  border-top: 1px solid var(--border);
+}
+
+.card-footer div {
+  display: flex;
+
+  flex-direction: column;
+}
+
+.card-footer span {
+  color: var(--muted);
+
+  font-size: 0.75rem;
+}
+
+.card-footer strong {
+  font-size: 1.1rem;
+}
+
+.select-button {
+  padding: var(--space-sm) var(--space-lg);
+
+  background: var(--brand);
+  color: white;
+
+  border: 0;
+  border-radius: 7px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.select-button:hover {
+  opacity: 0.9;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+  grid-area: footer;
+
+  padding: var(--space);
+
+  background: var(--surface);
+
+  border-top: 1px solid var(--border);
+
+  text-align: center;
+
+  color: var(--muted);
+
+  font-size: 0.8rem;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 700px) {
+  .app {
+    grid-template-columns: 1fr;
+
+    grid-template-areas:
+      "header"
+      "sidebar"
+      "main"
+      "footer";
+  }
+
+  .sidebar {
+    position: static;
+
+    height: auto;
+
+    border-right: 0;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .navbar {
+    padding: 0 var(--space);
+  }
+
+  .main {
+    padding: var(--space);
+  }
+
+  .page-heading {
+    align-items: flex-start;
+
+    flex-direction: column;
+  }
+
+  .toolbar {
+    align-items: flex-start;
+
+    flex-direction: column;
+  }
+
+  .toolbar-right {
+    width: 100%;
+  }
+
+  .toolbar-right select {
+    width: 100%;
+  }
+}
