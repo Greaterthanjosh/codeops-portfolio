@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Reservations — Habesha Eatery, Bole</title>
+
+    <meta
+        name="description"
+        content="Reserve a table and explore the Ethiopian menu at Habesha Eatery in Bole, Addis Ababa."
+    >
+</head>
+
+<body>
+
+    <header>
+        <h1>Habesha Eatery</h1>
+
+        <p>Authentic Ethiopian food in Bole, Addis Ababa.</p>
+    </header>
+
+    <nav aria-label="Main navigation">
+        <a href="index.html">Reservations</a>
+        |
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <main>
+
+        <section aria-labelledby="reservation-heading">
+            <h2 id="reservation-heading">Make a Reservation</h2>
+
+            <form action="#" method="post">
+
+                <p>
+                    <label for="name">Full Name</label>
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        required
+                    >
+                </p>
+
+                <p>
+                    <label for="email">Email Address</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        required
+                    >
+                </p>
+
+                <p>
+                    <label for="phone">Phone Number</label>
+                    <input
+                        type="tel"
+                        id="phone"
+                        name="phone"
+                    >
+                </p>
+
+                <p>
+                    <label for="date">Reservation Date</label>
+                    <input
+                        type="date"
+                        id="date"
+                        name="date"
+                        required
+                    >
+                </p>
+
+                <p>
+                    <label for="time">Reservation Time</label>
+                    <input
+                        type="time"
+                        id="time"
+                        name="time"
+                        required
+                    >
+                </p>
+
+                <p>
+                    <label for="guests">Number of Guests</label>
+                    <input
+                        type="number"
+                        id="guests"
+                        name="guests"
+                        min="1"
+                        max="20"
+                        required
+                    >
+                </p>
+
+                <p>
+                    <label for="requests">Special Requests</label>
+                    <textarea
+                        id="requests"
+                        name="requests"
+                        rows="5"
+                        cols="40"
+                    ></textarea>
+                </p>
+
+                <p>
+                    <button type="submit">Reserve a Table</button>
+                </p>
+
+            </form>
+        </section>
+
+        <section aria-labelledby="menu-heading">
+            <h2 id="menu-heading">Our Menu</h2>
+
+            <table>
+                <caption>Habesha Eatery Menu and Prices in Ethiopian Birr (ETB)</caption>
+
+                <thead>
+                    <tr>
+                        <th scope="col">Menu Item</th>
+                        <th scope="col">Description</th>
+                        <th scope="col">Price (ETB)</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <th scope="row">Doro Wot</th>
+                        <td>Spicy Ethiopian chicken stew served with injera.</td>
+                        <td>450</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">Kitfo</th>
+                        <td>Seasoned minced beef served with traditional sides.</td>
+                        <td>500</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">Beyaynetu</th>
+                        <td>A combination platter of vegetarian Ethiopian dishes.</td>
+                        <td>350</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">Tibs</th>
+                        <td>Sautéed beef with onions, peppers, and Ethiopian spices.</td>
+                        <td>475</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">Shiro Wot</th>
+                        <td>Traditional chickpea stew served with injera.</td>
+                        <td>300</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section aria-labelledby="media-heading">
+            <h2 id="media-heading">Visit Habesha Eatery</h2>
+
+            <figure>
+                <img
+                    src="Images\Habesha Eatery.jpeg"
+                    alt="Traditional Ethiopian food served on injera at Habesha Eatery"
+                    width="600"
+                >
+
+                <figcaption>
+                    Enjoy traditional Ethiopian dishes served with injera.
+                </figcaption>
+            </figure>
+
+            <h3>Find Us in Bole</h3>
+
+            <iframe
+                src="https://www.google.com/maps?q=Bole%2C%20Addis%20Ababa&output=embed"
+                title="Map showing the location of Habesha Eatery in Bole, Addis Ababa"
+                width="600"
+                height="450"
+                loading="lazy"
+            ></iframe>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Bole, Addis Ababa, Ethiopia</p>
+        <p>&copy; 2026 Habesha Eatery</p>
+    </footer>
+
+</body>
+</html>
