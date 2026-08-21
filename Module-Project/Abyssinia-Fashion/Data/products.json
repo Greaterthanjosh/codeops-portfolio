@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "name": "Habesha Traditional Dress",
+    "category": "Women's Fashion",
+    "price": 2500,
+    "image": "images/Habesha-Traditional-Dress.jpeg"
+  },
+  {
+    "id": 2,
+    "name": "Habesha Traditional Dress - Gold",
+    "category": "Women's Fashion",
+    "price": 2800,
+    "image": "images/Habesha-Traditional-Dress-2.jpeg"
+  },
+  {
+    "id": 3,
+    "name": "Habesha Traditional Dress - Green",
+    "category": "Women's Fashion",
+    "price": 3200,
+    "image": "images/Habesha-Traditional-Dress-3.jpeg"
+  },
+  {
+    "id": 4,
+    "name": "Habesha Traditional Dress - Elegant",
+    "category": "Women's Fashion",
+    "price": 3500,
+    "image": "images/Habesha-Traditional-Dress-4.jpeg"
+  },
+  {
+    "id": 5,
+    "name": "Habesha Traditional Shirt - Men 1",
+    "category": "Men's Fashion",
+    "price": 2200,
+    "image": "images/Habesha-Traditional-Shirt-Men-1.jpeg"
+  },
+  {
+    "id": 6,
+    "name": "Habesha Traditional Shirt - Men 2",
+    "category": "Men's Fashion",
+    "price": 2400,
+    "image": "images/Habesha-Traditional-Shirt-Men-2.jpeg"
+  },
+  {
+    "id": 7,
+    "name": "Habesha Traditional Shirt - Men 3",
+    "category": "Men's Fashion",
+    "price": 2700,
+    "image": "images/Habesha-Traditional-Shirt-Men-3.jpeg"
+  },
+  {
+    "id": 8,
+    "name": "Habesha Traditional Shirt - Men 4",
+    "category": "Men's Fashion",
+    "price": 3000,
+    "image": "images/Habesha-Traditional-Shirt-Men-4.jpeg"
+  },
+  {
+    "id": 9,
+    "name": "Habesha Traditional Shirt - Kids 1",
+    "category": "Baby & Kids Fashion",
+    "price": 1200,
+    "image": "images/Habesha-Traditional-Shirt-Kids-1.jpeg"
+  },
+  {
+    "id": 10,
+    "name": "Habesha Traditional Shirt - Kids 2",
+    "category": "Baby & Kids Fashion",
+    "price": 1400,
+    "image": "images/Habesha-Traditional-Shirt-Kids-2.jpeg"
+  },
+  {
+    "id": 11,
+    "name": "Habesha Traditional Shirt - Kids 3",
+    "category": "Baby & Kids Fashion",
+    "price": 1600,
+    "image": "images/Habesha-Traditional-Shirt-Kids-3.jpeg"
+  },
+  {
+    "id": 12,
+    "name": "Habesha Traditional Shirt - Kids 4",
+    "category": "Baby & Kids Fashion",
+    "price": 1800,
+    "image": "images/Habesha-Traditional-Shirt-Kids-4.jpeg"
+  }
+]
